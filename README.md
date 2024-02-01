@@ -38,4 +38,27 @@ Always build before pushing to GitHub. Building generates static html files that
 This should generate files in the /site folder. These files are used by GitHub. The `mkdocs build` command does not start a preview server.
 
 GitHub Pages only uses static files from the 'main' branch. Changes on other branches, build or not, will not be shown on the Page.
+
+
 ---
+
+
+## Documentation Guide
+
+### File Structure
+
+Do NOT use screenshots to show file structure. Instead, use the `tree` command.
+
+#### Installation
+
+`sudo apt install tree`
+
+#### Usage
+
+Basic usage
+
+`tree path/to/directory`
+
+Limit depth 
+
+`tree -L <Depth>`
