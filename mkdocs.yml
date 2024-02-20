@@ -1,3 +1,11 @@
 site_name: Studently Docs
+site_url: https://htl-studently.github.io/docs/
+
+nav:
+  - API: developer/api.md
+
+docs_dir: raw_docs
+site_dir: docs
+
 theme:
   name: material
