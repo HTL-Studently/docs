@@ -2,7 +2,7 @@
 Documentation using MKDocs with the Material Theme
 This file serves to demonstrate how to work with and setup MkDocs. To view the actual documentation hosted on GitHub Pages, go to this [page](https://htl-studently.github.io/docs/).
 
----
+
 ## Installation and Setup 
 
 ### Create a virtual environment: 
@@ -39,8 +39,6 @@ This should generate files in the /site folder. These files are used by GitHub. 
 
 GitHub Pages only uses static files from the 'main' branch. Changes on other branches, build or not, will not be shown on the Page.
 
-
----
 
 
 ## Documentation Guide
