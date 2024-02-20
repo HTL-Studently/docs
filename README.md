@@ -60,3 +60,12 @@ Basic usage
 Limit depth 
 
 `tree -L <Depth>`
+
+
+### Links
+
+Links that route to text inside this documentation should contain previews. This feature shows the content of a link while hovering it, allowing the reader to gain the information behind it without leaving the page. 
+
+``` markdown
+[Attribute Lists](#){ data-preview }
+```

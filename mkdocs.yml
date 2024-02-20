@@ -1,11 +1,35 @@
 site_name: Studently Docs
 site_url: https://htl-studently.github.io/docs/
+repo_url: https://github.com/HTL-Studently
 
-nav:
-  - API: developer/api.md
 
 docs_dir: raw_docs
 site_dir: docs
 
+features:
+  - navigation.instant
+  - navigation.instant.prefetch
+  - navigation.instant.progress
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.sections
+  - navigation.path
+  - navigation.top
+
+  - toc.follow
+  - toc.integrate 
+
+  - search.suggest
+  - search.highlight
+  - search.share
+
+plugins:
+  - offline
+  - search
+
+
 theme:
   name: material
+
+  icon:
+    repo: fontawesome/brands/github

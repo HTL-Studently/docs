@@ -20,7 +20,3 @@
 
 
 # Content
-
-nav:
-    - Developer:
-        - Backend API Documentation: "api.md"
