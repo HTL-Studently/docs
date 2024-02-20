@@ -8,27 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://htl-studently.github.io/docs/developer/api/">
+        <link rel="canonical" href="https://htl-studently.github.io/docs/developer/schemas.html">
+      
+      
+        <link rel="prev" href="api.html">
       
       
       
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
       
-        <title>API - Studently Docs</title>
+        <title>API/DB Schemas - Studently Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
       
       
 
 
     
     
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
       
     
     
@@ -41,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#backend-api-documentation" class="md-skip">
+        <a href="#apidb-schemas" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Studently Docs" class="md-header__button md-logo" aria-label="Studently Docs" data-md-component="logo">
+    <a href="../index.html" title="Studently Docs" class="md-header__button md-logo" aria-label="Studently Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API
+              API/DB Schemas
             
           </span>
         </div>
@@ -146,6 +150,18 @@
 </div>
     
     
+      <div class="md-header__source">
+        <a href="https://github.com/HTL-Studently" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
   </nav>
   
 </header>
@@ -171,7 +187,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Studently Docs" class="md-nav__button md-logo" aria-label="Studently Docs" data-md-component="logo">
+    <a href="../index.html" title="Studently Docs" class="md-nav__button md-logo" aria-label="Studently Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -180,10 +196,100 @@
     Studently Docs
   </label>
   
+    <div class="md-nav__source">
+      <a href="https://github.com/HTL-Studently" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
   <ul class="md-nav__list" data-md-scrollfix>
     
       
       
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to Studently
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Developer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Developer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backend API Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
     
@@ -202,18 +308,18 @@
           
   
   <span class="md-ellipsis">
-    API
+    API/DB Schemas
   </span>
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="schemas.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    API
+    API/DB Schemas
   </span>
   
 
@@ -235,28 +341,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#profile" class="md-nav__link">
+  <a href="#student" class="md-nav__link">
     <span class="md-ellipsis">
-      /profile
+      Student
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="/profile">
+    <nav class="md-nav" aria-label="Student">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#requires" class="md-nav__link">
+  <a href="#python-class" class="md-nav__link">
     <span class="md-ellipsis">
-      Requires:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#returns" class="md-nav__link">
-    <span class="md-ellipsis">
-      Returns
+      Python Class
     </span>
   </a>
   
@@ -279,6 +376,14 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -311,28 +416,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#profile" class="md-nav__link">
+  <a href="#student" class="md-nav__link">
     <span class="md-ellipsis">
-      /profile
+      Student
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="/profile">
+    <nav class="md-nav" aria-label="Student">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#requires" class="md-nav__link">
+  <a href="#python-class" class="md-nav__link">
     <span class="md-ellipsis">
-      Requires:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#returns" class="md-nav__link">
-    <span class="md-ellipsis">
-      Returns
+      Python Class
     </span>
   </a>
   
@@ -366,60 +462,53 @@
                 
                   
 
+  
+  
 
-<h1 id="backend-api-documentation">Backend API Documentation</h1>
-<h2 id="profile">/profile</h2>
-<p>Get the profile of a user. Includes Students and Classheads.  </p>
-<h3 id="requires">Requires:</h3>
-<p>access_token - Access Token</p>
-<pre><code>{
-"access_token": "&lt;Access Token&gt;"
-}
-</code></pre>
-<h3 id="returns">Returns</h3>
-<pre><code>{
-"code": 200,
-"message": {
-    "profile": [
-    {
-        "_id": "&lt;ID&gt;",
-        "disabled": &lt;True/False&gt;,
-        "identifier": "&lt;ID&gt;",
-        "username": "&lt;displayName&gt;",
-        "firstname": "&lt;Firstname&gt;",
-        "lastname": "&lt;Lastname&gt;",
-        "email": "&lt;mail&gt;",
-        "expires": "&lt;date&gt;",
-        "created": "&lt;date&gt;",
-        "sclass": "&lt;sclass&gt;",
-        "type": "&lt;Student/&gt;",
-        "owned_objects": []
-    }
-    ]
-}
-}
+
+<h1 id="apidb-schemas">API/DB Schemas</h1>
+<h2 id="student">Student</h2>
+<h3 id="python-class">Python Class</h3>
+<pre><code class="language-python">class Student(BaseModel):
+    disabled: bool = True
+    identifier: str
+    username: str
+    firstname: str
+    lastname: str
+    email: str
+    expires: datetime = datetime.now() + timedelta(days=365)
+    created: datetime = datetime.now()
+    sclass: str
+    type: str = &quot;student&quot;
+    owned_objects: list = []
+
+    def return_dict(self):
+        return {
+            &quot;disabled&quot;: str(self.disabled),
+            &quot;identifier&quot;: str(self.identifier),
+            &quot;username&quot;: str(self.username),
+            &quot;firstname&quot;: str(self.firstname),
+            &quot;lastname&quot;: str(self.lastname),
+            &quot;email&quot;: str(self.email),
+            &quot;expires&quot;: str(self.expires),
+            &quot;created&quot;: str(self.created),
+            &quot;sclass&quot;: str(self.sclass),
+            &quot;type&quot;: str(self.type),
+            &quot;owned_objects&quot;: str(self.owned_objects),
+        }
 </code></pre>
 <h3 id="example">Example</h3>
-<pre><code>{
-"code": 200,
-"message": {
-    "profile": [
-    {
-        "_id": "96ec350d-ea90-406b-a6c6-94463948c77d",
-        "disabled": false,
-        "identifier": "96ec350d-ea90-406b-a6c6-94463948c77d",
-        "username": "SIMĆIĆ Erik, 5AHITS",
-        "firstname": "Erik",
-        "lastname": "SIMĆIĆ",
-        "email": "erik.simcic@edu.htl-villach.at",
-        "expires": "2025-01-24T21:19:56.159000",
-        "created": "2024-01-25T21:19:56.159000",
-        "sclass": "5AHITS",
-        "type": "Student",
-        "owned_objects": []
-    }
-    ]
-}
+<pre><code class="language-json">{
+    &quot;disabled&quot;: False ,
+    &quot;identifier&quot;: &quot;96ec350d-ea90-406b-a6c6-94463948c77d&quot;,
+    &quot;username&quot;: &quot;SIMĆIĆ Erik, 5AHITS&quot;,
+    &quot;firstname&quot;: &quot;Erik&quot;,
+    &quot;lastname&quot;: &quot;SIMĆIĆ&quot;,
+    &quot;email&quot;: &quot;erik.simcic@edu.htl-villach.at&quot;,
+    &quot;expires&quot;: datetime.datetime(2025, 1, 24, 21, 19, 56, 159000),&quot;created&quot;: datetime.datetime(2024, 1, 25, 21, 19, 56, 159000),
+    &quot;sclass&quot;: &quot;5AHITS&quot;,
+    &quot;type&quot;: &quot;Student&quot;,
+    &quot;owned_objects&quot;: [],
 }
 </code></pre>
 
@@ -468,10 +557,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
     
   </body>

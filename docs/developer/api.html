@@ -8,23 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://htl-studently.github.io/docs/index.html">
+        <link rel="canonical" href="https://htl-studently.github.io/docs/developer/api.html">
       
       
+        <link rel="prev" href="../index.html">
       
-        <link rel="next" href="developer/api.html">
+      
+        <link rel="next" href="schemas.html">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
       
-        <title>Studently Docs</title>
+        <title>Backend API Documentation - Studently Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
       
       
 
@@ -45,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-studently" class="md-skip">
+        <a href="#backend-api-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="Studently Docs" class="md-header__button md-logo" aria-label="Studently Docs" data-md-component="logo">
+    <a href="../index.html" title="Studently Docs" class="md-header__button md-logo" aria-label="Studently Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -100,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to Studently
+              Backend API Documentation
             
           </span>
         </div>
@@ -187,7 +189,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="Studently Docs" class="md-nav__button md-logo" aria-label="Studently Docs" data-md-component="logo">
+    <a href="../index.html" title="Studently Docs" class="md-nav__button md-logo" aria-label="Studently Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -214,19 +216,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -235,7 +228,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -244,17 +236,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -268,7 +262,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Developer
@@ -279,10 +273,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="developer/api.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="api.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -291,6 +294,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -303,7 +307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developer/schemas.html" class="md-nav__link">
+      <a href="schemas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -360,15 +364,155 @@
   
 
 
-<h1 id="welcome-to-studently">Welcome to Studently</h1>
-<p><em>Contracted by</em></p>
-<p><strong>Prof. DI Harald Wolf</strong></p>
-<p><em>Supervised by</em></p>
-<p><strong>Prof. DI Harald Wolf</strong></p>
-<p><em>Created by</em></p>
-<p><strong>Panna Kunos</strong> </p>
-<p><strong>Erik Simcic</strong></p>
-<h1 id="content">Content</h1>
+<h1 id="backend-api-documentation">Backend API Documentation</h1>
+<h1 id="profile">Profile</h1>
+<h2 id="post-profile">POST /profile</h2>
+<p>Get the profile of a user. Includes Students and Classheads.  </p>
+<h3 id="requires">Requires:</h3>
+<ul>
+<li>access_token: str - Access Token</li>
+</ul>
+<pre><code class="language-json">    {
+    &quot;access_token&quot;: &quot;&lt;Access Token&gt;&quot;
+    }
+</code></pre>
+<h3 id="returns">Returns</h3>
+<pre><code class="language-json">    {
+    &quot;code&quot;: 200,
+    &quot;message&quot;: {
+        &quot;profile&quot;: [
+        {
+            &quot;_id&quot;: &quot;&lt;ID&gt;&quot;,
+            &quot;disabled&quot;: &lt;True/False&gt;,
+            &quot;identifier&quot;: &quot;&lt;ID&gt;&quot;,
+            &quot;username&quot;: &quot;&lt;displayName&gt;&quot;,
+            &quot;firstname&quot;: &quot;&lt;Firstname&gt;&quot;,
+            &quot;lastname&quot;: &quot;&lt;Lastname&gt;&quot;,
+            &quot;email&quot;: &quot;&lt;mail&gt;&quot;,
+            &quot;expires&quot;: &quot;&lt;date&gt;&quot;,
+            &quot;created&quot;: &quot;&lt;date&gt;&quot;,
+            &quot;sclass&quot;: &quot;&lt;sclass&gt;&quot;,
+            &quot;type&quot;: &quot;&lt;Student/&gt;&quot;,
+            &quot;owned_objects&quot;: []
+        }
+        ]
+    }
+    }
+</code></pre>
+<h3 id="example">Example</h3>
+<pre><code class="language-json">    {
+    &quot;code&quot;: 200,
+    &quot;message&quot;: {
+        &quot;profile&quot;: [
+        {
+            &quot;_id&quot;: &quot;96ec350d-ea90-406b-a6c6-94463948c77d&quot;,
+            &quot;disabled&quot;: false,
+            &quot;identifier&quot;: &quot;96ec350d-ea90-406b-a6c6-94463948c77d&quot;,
+            &quot;username&quot;: &quot;SIMĆIĆ Erik, 5AHITS&quot;,
+            &quot;firstname&quot;: &quot;Erik&quot;,
+            &quot;lastname&quot;: &quot;SIMĆIĆ&quot;,
+            &quot;email&quot;: &quot;erik.simcic@edu.htl-villach.at&quot;,
+            &quot;expires&quot;: &quot;2025-01-24T21:19:56.159000&quot;,
+            &quot;created&quot;: &quot;2024-01-25T21:19:56.159000&quot;,
+            &quot;sclass&quot;: &quot;5AHITS&quot;,
+            &quot;type&quot;: &quot;Student&quot;,
+            &quot;owned_objects&quot;: []
+        }
+        ]
+    }
+    }
+</code></pre>
+<h1 id="payments">Payments</h1>
+<h2 id="post-payment">POST /payment</h2>
+<p>Creates a payment object. </p>
+<h3 id="requires_1">Requires:</h3>
+<ul>
+<li>
+<p>access_token: str - Access Token</p>
+</li>
+<li>
+<p>name: str</p>
+</li>
+<li>
+<p>author: str</p>
+</li>
+<li>
+<p>target: Student | SClass | list[Student|SClass]</p>
+</li>
+<li>
+<p>product: Any = None</p>
+</li>
+<li>
+<p>cost: float</p>
+</li>
+<li>
+<p>iban: str</p>
+</li>
+<li>
+<p>start_date: datetime = datetime.now</p>
+</li>
+<li>
+<p>due_date: datetime</p>
+</li>
+<li>
+<p>expires: datetime = datetime.now() + timedelta(days=365)</p>
+</li>
+</ul>
+<pre><code class="language-json">{
+&quot;access_token&quot;: &quot;string&quot;,
+&quot;name&quot;: &quot;string&quot;,
+&quot;author&quot;: &quot;string&quot;,
+&quot;target&quot;: {
+    &quot;disabled&quot;: true,
+    &quot;identifier&quot;: &quot;string&quot;,
+    &quot;username&quot;: &quot;string&quot;,
+    &quot;firstname&quot;: &quot;string&quot;,
+    &quot;lastname&quot;: &quot;string&quot;,
+    &quot;email&quot;: &quot;string&quot;,
+    &quot;expires&quot;: &quot;2025-02-19T19:18:33.693290&quot;,
+    &quot;created&quot;: &quot;2024-02-20T19:18:33.693295&quot;,
+    &quot;sclass&quot;: &quot;string&quot;,
+    &quot;type&quot;: &quot;student&quot;,
+    &quot;owned_objects&quot;: []
+},
+&quot;product&quot;: &quot;string&quot;,
+&quot;cost&quot;: 0,
+&quot;iban&quot;: &quot;string&quot;,
+&quot;start_date&quot;: &quot;2024-02-20T19:18:41.553Z&quot;,
+&quot;due_date&quot;: &quot;2024-02-20T19:18:41.553Z&quot;,
+&quot;expires&quot;: &quot;2025-02-19T19:18:33.702061&quot;
+}
+</code></pre>
+<h3 id="returns_1">Returns</h3>
+<h3 id="example_1">Example</h3>
+<h4 id="input">Input</h4>
+<pre><code class="language-json">{
+  &quot;access_token&quot;: &quot;string&quot;,
+  &quot;name&quot;: &quot;string&quot;,
+  &quot;author&quot;: &quot;string&quot;,
+  &quot;target&quot;: {
+    &quot;disabled&quot;: true,
+    &quot;identifier&quot;: &quot;string&quot;,
+    &quot;username&quot;: &quot;string&quot;,
+    &quot;firstname&quot;: &quot;string&quot;,
+    &quot;lastname&quot;: &quot;string&quot;,
+    &quot;email&quot;: &quot;string&quot;,
+    &quot;expires&quot;: &quot;2025-02-19T19:18:33.693290&quot;,
+    &quot;created&quot;: &quot;2024-02-20T19:18:33.693295&quot;,
+    &quot;sclass&quot;: &quot;string&quot;,
+    &quot;type&quot;: &quot;student&quot;,
+    &quot;owned_objects&quot;: []
+  },
+  &quot;product&quot;: &quot;string&quot;,
+  &quot;cost&quot;: 0,
+  &quot;iban&quot;: &quot;string&quot;,
+  &quot;start_date&quot;: &quot;2024-02-20T19:18:41.553Z&quot;,
+  &quot;due_date&quot;: &quot;2024-02-20T19:18:41.553Z&quot;,
+  &quot;expires&quot;: &quot;2025-02-19T19:18:33.702061&quot;
+}
+</code></pre>
+<h4 id="return-200">Return - 200</h4>
+<pre><code class="language-json"></code></pre>
 
 
 
@@ -415,10 +559,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
     
   </body>
