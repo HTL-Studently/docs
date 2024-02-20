@@ -1,6 +1,22 @@
-# Welcome to MkDocs
+# Welcome to Studently
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+*Contracted by*
+
+**Prof. DI Harald Wolf**
+
+
+
+
+*Supervised by*
+
+**Prof. DI Harald Wolf**
+
+
+*Created by*
+
+**Panna Kunos** 
+
+**Erik Simcic**
 
 ## Commands
 
