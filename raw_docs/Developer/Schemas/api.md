@@ -162,7 +162,73 @@ Creates a payment object.
 ```json
 ```
 
+## PUT /payment
+
+### Requires:
+
+-access_token
+
+-disabled
+
+-name
+
+-author
+
+-target_type
+
+-target
+
+-product
+
+-confirmation
+
+-payed
+
+-cost
+
+-iban
+
+-bic
+
+-start_date
+
+-due_date
+
+-expires
+
+-id
+
+```json
+{
+  "access_token": "string",
+  "disabled": false,
+  "name": "string",
+  "author": "string",
+  "target_type": "string",
+  "target": "string",
+  "product": "string",
+  "confirmation": "string",
+  "payed": false,
+  "cost": 0,
+  "iban": "string",
+  "bic": "string",
+  "start_date": "2024-02-23T09:48:22.763Z",
+  "due_date": "2024-02-23T09:48:22.763Z",
+  "expires": "2025-02-22T09:25:26.608477",
+  "id": "string"
+}
+```
 
 
 
-# Class
+## GET /payment
+
+### Requires:
+
+- access_token: str - Access Token
+
+```json
+{
+  "access_token": "string"
+}
+```

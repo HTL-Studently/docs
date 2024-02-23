@@ -1,4 +1,6 @@
-# Why we need it
+# Microsoft GraphAPI
+
+## Why we need it
 
 With the Microsoft GraphAPI, Microsoft Users can be authenticated, authorized. It is also used to fill the user database. Using the structure of its roles students, teachers and heads of classes can be distinguished without further identifiers. The Sandbox Tool Graph Explorer all API calls can be tested.
 
