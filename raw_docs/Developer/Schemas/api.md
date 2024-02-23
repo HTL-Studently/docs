@@ -163,3 +163,6 @@ Creates a payment object.
 ```
 
 
+
+
+# Class

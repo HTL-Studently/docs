@@ -59,7 +59,34 @@ class Student(BaseModel):
 
 ## SClass
 
+### SClass Class
+
+### SClass Example
+
 ## ClassHead
+
+Used to represent a head of class. 
+
+### ClassHead Class
+
+```python
+class ClassHead(BaseModel):
+    disabled: bool = True
+    identifier: str
+    username: str
+    firstname: str
+    lastname: str
+    email: str
+    expires: datetime = datetime.now() + timedelta(days=365)
+    created: datetime = datetime.now()
+    type: str = "ClassHead"
+```
+
+### ClassHead Example
+
+```
+
+```
 
 ## Payment
 
@@ -133,8 +160,72 @@ class PaymentConfirmation(BaseModel):
 
 ## Admin
 
+### Admin Class
+
+```python
+class Admin(BaseModel):
+    disabled: bool = True
+    identifier: str
+    username: str
+    firstname: str
+    lastname: str
+    email: str
+    expires: datetime = datetime.now() + timedelta(days=365)
+    created: datetime = datetime.now()
+    type: str = "admin"
+
+```
+
+### Admin Example
+
 ## License
+
+### License Class
+
+```python
+class License(BaseModel):
+    disabled: bool = True
+    identifier: str
+    license_name: str 
+    license_group: str
+    description: str = ""
+    cost: str = ""
+    expires: datetime = datetime.now() + timedelta(days=365)
+    created: datetime = datetime.now()
+```
+
+### License Example
 
 ## LicenseGroup
 
+### LicenseGroup Class
+
+```python 
+class LicenseGroup(BaseModel):
+    disabled: bool = True
+    identifier: str
+    license_name: str 
+    description: str = ""
+    cost: str = ""
+    expires: datetime = datetime.now() + timedelta(days=365)
+    created: datetime = datetime.now()
+    licenses: list = []
+```
+
 ## PaymentConfirmation
+
+### PaymentConfirmation Class
+
+```python
+class PaymentConfirmation(BaseModel):
+    disabled: bool = False
+    identifier: str
+    author: str
+    payment: str
+    expires: None | datetime = datetime.now() + timedelta(days=365)
+    created: datetime = datetime.now()
+    file_name: str
+    filedata: Any
+```
+
+### PaymentConfirmation Example
