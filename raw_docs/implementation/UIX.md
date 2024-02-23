@@ -12,6 +12,8 @@ Has the same functionality as the student view with the addition of being able t
 
 Student and Head of the class share a similar landing page as shown in this mock-up.
 
+![Mockup](../../docs/assets/images/Mockup.png)
+
 ### Teacher
 
 Does not have the same dashboard as students do, instead is greeted by a management page where they can select a class to view and has the option to create payment requests, view already submitted payments and request licenses for a class.
@@ -20,11 +22,15 @@ Does not have the same dashboard as students do, instead is greeted by a managem
 
 The accounting team also has their own view where the simplified page displays all incoming payments. This creates an easily sortable and searchable list view where they have the option to confirm the submitted payments. As displayed on the mock-up, there is also an Events tab which displays submitted payments grouped by their tagged purpose. 
 
+![Finances](../../docs/assets/images/Mockup%20Finances.png)
+
 ## Routing
 
 Sveltekit’s routing is a file-based routing system, where each file in the “src/routes” directory corresponds to a route in the application. SvelteKit automatically generates the necessary code to handle navigation between these routes, including client-side transitions. It also supports dynamic and nested routing. One of its features are slugs that enable one singe page to act as a template where URL and content are dynamically replaced. 
 
 The Studently platform uses slugs when accessing individual payment requests.
+
+![Routing](../../docs/assets/images/screeenshot_routing.png)
 
 For the structure in this file-based routing system a folder represents the route where it’s “+page.svelte” page leads to. For example the “src/routes/(protected)/licenses/+page.svelte” file will have the URL of just /Licenses.
 
