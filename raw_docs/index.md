@@ -54,5 +54,7 @@ Simcic Erik – Roles:
 - Backend developer
 
 
+## Big Picture
+
 
 
