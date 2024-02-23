@@ -161,3 +161,8 @@ Creates a payment object.
 
 ```json
 ```
+
+
+
+
+# Class

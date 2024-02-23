@@ -2,17 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://htl-studently.github.io/docs/index.html</loc>
-         <lastmod>2024-02-20</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://htl-studently.github.io/docs/developer/api.html</loc>
-         <lastmod>2024-02-20</lastmod>
+         <loc>https://htl-studently.github.io/docs/Developer/Contribution%20Guides/Styleguide.html</loc>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://htl-studently.github.io/docs/developer/schemas.html</loc>
-         <lastmod>2024-02-20</lastmod>
+         <loc>https://htl-studently.github.io/docs/Developer/Schemas/api.html</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://htl-studently.github.io/docs/Developer/Schemas/api_schemas.html</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://htl-studently.github.io/docs/Developer/Schemas/db_schemas.html</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://htl-studently.github.io/docs/Developer/Third%20Party%20APIs/Adobe%20Developer.html</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://htl-studently.github.io/docs/Developer/Third%20Party%20APIs/Microsoft%20GraphAPI.html</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://htl-studently.github.io/docs/Developer/implementation/Containerization.html</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://htl-studently.github.io/docs/Developer/implementation/UIX.html</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://htl-studently.github.io/docs/General/Installation%20Guide.html</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://htl-studently.github.io/docs/General/statistiks.html</loc>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
