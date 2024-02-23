@@ -505,7 +505,7 @@
         
   
   <span class="md-ellipsis">
-    Why we need it
+    Adobe Developer Console
   </span>
   
 
@@ -526,7 +526,7 @@
         
   
   <span class="md-ellipsis">
-    Why we need it
+    Microsoft GraphAPI
   </span>
   
 
@@ -909,7 +909,52 @@
 </code></pre>
 <h4 id="return-200">Return - 200</h4>
 <pre><code class="language-json"></code></pre>
-<h1 id="class">Class</h1>
+<h2 id="put-payment">PUT /payment</h2>
+<h3 id="requires_2">Requires:</h3>
+<p>-access_token</p>
+<p>-disabled</p>
+<p>-name</p>
+<p>-author</p>
+<p>-target_type</p>
+<p>-target</p>
+<p>-product</p>
+<p>-confirmation</p>
+<p>-payed</p>
+<p>-cost</p>
+<p>-iban</p>
+<p>-bic</p>
+<p>-start_date</p>
+<p>-due_date</p>
+<p>-expires</p>
+<p>-id</p>
+<pre><code class="language-json">{
+  &quot;access_token&quot;: &quot;string&quot;,
+  &quot;disabled&quot;: false,
+  &quot;name&quot;: &quot;string&quot;,
+  &quot;author&quot;: &quot;string&quot;,
+  &quot;target_type&quot;: &quot;string&quot;,
+  &quot;target&quot;: &quot;string&quot;,
+  &quot;product&quot;: &quot;string&quot;,
+  &quot;confirmation&quot;: &quot;string&quot;,
+  &quot;payed&quot;: false,
+  &quot;cost&quot;: 0,
+  &quot;iban&quot;: &quot;string&quot;,
+  &quot;bic&quot;: &quot;string&quot;,
+  &quot;start_date&quot;: &quot;2024-02-23T09:48:22.763Z&quot;,
+  &quot;due_date&quot;: &quot;2024-02-23T09:48:22.763Z&quot;,
+  &quot;expires&quot;: &quot;2025-02-22T09:25:26.608477&quot;,
+  &quot;id&quot;: &quot;string&quot;
+}
+</code></pre>
+<h2 id="get-payment">GET /payment</h2>
+<h3 id="requires_3">Requires:</h3>
+<ul>
+<li>access_token: str - Access Token</li>
+</ul>
+<pre><code class="language-json">{
+  &quot;access_token&quot;: &quot;string&quot;
+}
+</code></pre>
 
 
 
