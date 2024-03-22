@@ -26,7 +26,11 @@ features:
 plugins:
   - offline
   - search
+  - glightbox
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
 
 theme:
   name: material
