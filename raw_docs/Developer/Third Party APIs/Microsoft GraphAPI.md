@@ -18,3 +18,14 @@ No page of this website is meant to be accessible to an unauthenticated user. Sv
 
 The second usage of the Microsoft GraphAPI is gathering intofmation about user licenses. The Adobe Developer API is not usable without admin rights, so using it to gather information about the license status is not viable. The alternative that is being used is gathering said information from the [Adobe Identity Management Application](https://portal.azure.com/#view/Microsoft_AAD_IAM/ManagedAppMenuBlade/~/Overview/objectId/680033ff-1040-43a8-a8db-18d8d6e81f9a/appId/f68114c4-a128-4172-8232-65ca425cc112/preferredSingleSignOnMode~/null/servicePrincipalType/Application/fromNav/) using its ObjectID and the API endpoint at .../servicePrincipals/<OjbectID>/appRoleAssignedTo. The function is also build to support more then just the Adobe Identity Management Application staticly. The list of default licenses and their sources, can be extended by further license objects together with theire sources, either group or application (for example the ObjectID Adobe Identity Management). The licenses are automatically attached when the students collection is build. 
 
+For example, this is the link used to access the group of students that recive a Adobe license by default.
+
+```json
+servicePrincipals/{license_group.source}/appRoleAssignedTo
+```
+
+## Large responses
+
+GraphAPI responses that exceed a certain length are split into several requests. These requests are marked by having a *@odata.nextLink* tag in their response. The value of this tag represents the link for the followup request that has either all of the reminding data or it again has a *@odata.nextLink* tag.
+
+![@odata.nextLink](img/nextLink.png)
